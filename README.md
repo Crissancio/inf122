@@ -1,2 +1,2 @@
-Nombre: Cristhian Pablo
-Materia: INF - 122
+NOMBRE: Cristhian Pablo Alvarez Guarachi
+MATERIA: INF-122
