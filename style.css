@@ -1,11 +1,8 @@
 body {
-    background-color: #f0f0f0;
+    background-color: #d4d2f1;
 }
 h1 {
-    color:rgb(255,0 ,0 );
-    font-size: 25px;
-    background-color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ed5bf2;
 }
 p {
     font-size:  large;
@@ -15,15 +12,15 @@ p {
 }
 img {
     max-width: 25%;
-    max-height: 25%s;
+    max-height: 25%;
 }
 .Enviar {
-    background-color: rgb(0,255,255);
-    border-radius: 10px;
+    background-color: #a5ffea;
+    border-radius: 5px;
+    color: #272625;
 }
 .etiqueta {
-    font-size: 20px;
-    background-color: aquamarine;
+    background-color: #fe5de1;
 }
 ol li {
     font-size: 30px;
@@ -34,4 +31,8 @@ ul li {
     background-color: yellow;
     color: green;
     font-weight: bold;
+}
+h2 {
+    color: #ed5bf2;
+    
 }
