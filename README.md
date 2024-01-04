@@ -1,4 +1,4 @@
-#INF - 122
+# INF - 122
 NOMBRE: Cristhian Pablo Alvarez Guarachi
 
 MATERIA: INF-122
