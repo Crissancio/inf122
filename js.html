@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bienvenido al Mini Proyecto</h1>
+    <p>Este proyecto muestra la integracion de conceptos de HTML, CSS y JavaScript</p>
+    <h2>To Do List</h2>
+    <ul id="tarea-lista">
+    </ul>
+        <input type="text" name="text" id="nueva-tarea" placeholder="Agregar nueva tarea">
+        <button onclick="agregarTarea()" class="button">Agregar Tarea</button>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        p{
+            color: gray;
+        }
+        .button{
+            border-width: 0;
+            height: 35px;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(1, 197, 47);
+        }
+    </style>
+    <script>
+        function agregarTarea(){
+            var tarea = document.getElementById("nueva-tarea").value;
+            var nuevoItem = document.createElement("li");
+            nuevoItem.textContent = tarea;
+            document.getElementById("tarea-lista").appendChild(nuevoItem);
+            document.getElementById("nueva-tarea").value="";
+        };
+    </script>
+</body>
+</html>
