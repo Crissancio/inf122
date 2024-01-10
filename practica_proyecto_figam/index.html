@@ -14,28 +14,22 @@
             <h1 class="title">Scaffolding a New Company</h1>
             <p class="subtitle">Join us with the lastest blockchain innovations</p>
         </div>
-        <div class="boxes-container">
-            <section class="box-info-container">
-                <div class="box">
-                    <div class="icon-image">
-                        <img src="../practica_proyecto_figam/media/fa-solid_money-check-alt.svg" alt="icon">
-                    </div>
+        <div class="cardes-container">
+            <section class="card-info-container">
+                <div class="card">
+                    <img src="../practica_proyecto_figam/media/fa-solid_money-check-alt.svg" alt="icon">
                     <div class="icon-text">
                         <p>Join us with the lastest blockchain innovations</p>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="icon-image">
-                        <img src="../practica_proyecto_figam/media/fa-solid_money-check-alt.svg" alt="icon">
-                    </div>
+                <div class="card">
+                    <img src="../practica_proyecto_figam/media/fa-solid_money-check-alt.svg" alt="icon">
                     <div class="icon-text">
                         <p>Join us with the lastest blockchain innovations</p>
                     </div>
                 </div>
-                <div class="box">
-                    <div class="icon-image">
-                        <img src="../practica_proyecto_figam/media/fa-solid_money-check-alt.svg" alt="icon">
-                    </div>
+                <div class="card">
+                    <img src="../practica_proyecto_figam/media/fa-solid_money-check-alt.svg" alt="icon">
                     <div class="icon-text">
                         <p>Join us with the lastest blockchain innovations</p>
                     </div>
@@ -72,8 +66,8 @@
             display: flex;
             flex-direction: column;
             width: 100%;
-            grid-template-rows: auto 1fr auto;
             justify-content: center;
+            align-content: end;
         }
         .title{
             color: var(--white);
@@ -86,9 +80,38 @@
             text-align: center;
         }
         /**********************************/
-        .boxes-container{
+        .cardes-container{
+            width: 100%;
+            height: 100%;
+        }
+        .card-info-container{
             display: flex;
-            flex-direction: row;
+            flex-wrap: wrap-reverse;
+            justify-content: space-around;
+            
+        }
+        .icon-text{
+            display: flex;
+            border-radius: 5px;
+            text-align: center;
+            height: 160px;
+            width: 300px;
+            color: var(--clear-gray);
+            background-color: var(--gray-blue);
+            align-items: center;
+        }
+        
+        .card{
+            width: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card img{
+            display: flex;
+            width: 44px;
+            height: 55px;
+            align-content: flex-end;
         }
     </style>
 </body>
