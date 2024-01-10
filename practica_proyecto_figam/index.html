@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porro</title>
+</head>
+<body>
+    <div class="main">
+        <div class="title-container">
+            <h1 class="title">Scaffolding a New Company</h1>
+            <p class="subtitle">Join us with the lastest blockchain innovations</p>
+        </div>
+        <div class="boxes-container">
+            <section class="box-info-container">
+                <div class="box">
+                    <div class="icon-image">
+                        <img src="../practica_proyecto_figam/media/fa-solid_money-check-alt.svg" alt="icon">
+                    </div>
+                    <div class="icon-text">
+                        <p>Join us with the lastest blockchain innovations</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon-image">
+                        <img src="../practica_proyecto_figam/media/fa-solid_money-check-alt.svg" alt="icon">
+                    </div>
+                    <div class="icon-text">
+                        <p>Join us with the lastest blockchain innovations</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon-image">
+                        <img src="../practica_proyecto_figam/media/fa-solid_money-check-alt.svg" alt="icon">
+                    </div>
+                    <div class="icon-text">
+                        <p>Join us with the lastest blockchain innovations</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="pet-container"></div>
+    </div>
+
+    <style>
+        :root{
+            --white: #ffffff;
+            --black: #000000;
+            --gray: #2b2e34;
+            --yelow: #d1ae31;
+            --gray-blue: #0d1423;
+            --clear-gray: #afc0e2;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 40px;
+        }
+        body{
+            background-color: var(--gray);
+            font-family: 'Nunito', sans-serif;
+            margin: 0;
+        }
+        .main{
+            display: grid;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+        }
+        .title-container{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            grid-template-rows: auto 1fr auto;
+            justify-content: center;
+        }
+        .title{
+            color: var(--white);
+            font-size: var(--lg);
+            text-align: center;
+        }
+        .subtitle{
+            color: var(--clear-gray);
+            font-size: var(--md);
+            text-align: center;
+        }
+        /**********************************/
+        .boxes-container{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</body>
+</html>

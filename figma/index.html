@@ -5,19 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,500&display=swap" rel="stylesheet">
     <title>Proyecto Figma</title>
 </head>
-<body align="center">
+<body>
     <div class="main">
         <div class="brochure">
             <h1 class="title">Situational Awareness in the Workplace</h1>
-            <p class="sub-title">Free product design illustrations for startups and designers.<br>
-                High-quality digital assets that have been tested and reviewed by a team of </p>
-                <button type="button" class="primary-button">Download Bronchure</button>
+            <p class="sub-title">Free product design illustrations for startups and designers.</p>
+            <p class="sub-title">High-quality digital assets that have been tested and reviewed by a team of</p>
+            <button type="button" class="primary-button">
+                <div class="button-info-container">
+                    <img src="../figma/Media/Icons/bx_bxs-download.svg" alt="download">
+                    <p>Download Bronchure</p>
+                </div>
+            </button>
         </div>
-        <div class="eeee">
-
+        <!-------------------------------------->
+        <div class="more-info">
+            <section class="icons-container">
+                <div class="card-container">
+                    <div class="card-icon">
+                        <figure>
+                            <img src="../figma/Media/Icons/bx_bxs-book-heart -blue.svg" alt="logo" class="logo">
+                        </figure>
+                    </div>
+                    <div class="icon-text">
+                        <h2 class="icon-title">
+                            Research Materials
+                        </h2>
+                        <p class="icon-description">
+                            Guide your decisions with our wealth of research.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-icon">
+                        <figure>
+                            <img src="../figma/Media/Icons/bx_bxs-book-heart-red.svg" alt="logo" class="logo">
+                        </figure>
+                    </div>
+                    <div class="icon-text">
+                        <h2 class="icon-title">
+                            Research Materials
+                        </h2>
+                        <p class="icon-description">
+                            Guide your decisions with our wealth of research.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-icon">
+                        <figure>
+                            <img src="../figma/Media/Icons/ant-design_alert-filled.svg" alt="logo" class="logo">
+                        </figure>
+                    </div>
+                    <div class="icon-text">
+                        <h2 class="icon-title">
+                            Research Materials
+                        </h2>
+                        <p class="icon-description">
+                            Guide your decisions with our wealth of research.
+                        </p>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card-icon">
+                        <figure>
+                            <img src="../figma/Media/Icons/ant-design_alert-filled.svg" alt="logo" class="logo">
+                        </figure>
+                    </div>
+                    <div class="icon-text">
+                        <h2 class="icon-title">
+                            Research Materials
+                        </h2>
+                        <p class="icon-description">
+                            Guide your decisions with our wealth of research.
+                        </p>
+                    </div>
+                </div>
+            </section>
         </div>
     </div>
     
@@ -39,6 +106,99 @@
         body{
             font-family: 'Nunito', sans-serif;
             margin: 0;
+        }
+
+        .main{
+            width: 100%;
+            height: 100%;
+            display: grid;
+            place-items: center;
+            background-color: var(--white);
+        }
+
+        .brochure{
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            width: 100%;
+            justify-items: center;
+            background-color: var(--white);
+        }
+        .title{ 
+            color: var(--black);
+            text-align: center;
+            font-size: var(--lg);
+        }
+        .sub-title{
+            color: var(--black);
+            text-align: center;
+            font-size: var(--md);
+            margin: 5px 0 5px 0;
+        }
+        .primary-button{
+            background-color: var(--purple);
+            color: var(--white);
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: var(--md);
+            cursor: pointer;
+            margin: 100px 0 100px 0;
+        }
+
+        .button-info-container{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-column-gap: 10px;
+            align-items: center;
+        }
+        .button-info-container img{
+            width: var(--md);
+        }
+
+        .more-info{
+            display: grid;
+            background-color: var(--light-purple);
+            width: 100%;
+        }
+        .card-container{
+            display: flex;
+            align-content: space-between;
+            align-items: left;
+            margin: 16px 0 16px 0;
+        }
+        .icons-container{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 50px 260px 50px 260px;
+            justify-content: center;
+        }
+        .card-icon{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: var(--white);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 28px;
+        }
+        .card-icon figure img{
+            width: 50px;
+            height: 50px;
+        }
+        .icon-text h2{
+            font-size: var(--sm);
+            margin: 0;
+        }
+        .icon-text p{
+            font-size: var(--sm);
+            margin: 0;
+        }
+        @media (max-width:720px){
+            .icons-container{
+                grid-template-columns: repeat(1,1fr);
+                margin: 50px 10px 50px 10px;
+            }
         }
     </style>
 </body>
