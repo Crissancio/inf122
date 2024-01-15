@@ -35,4 +35,7 @@ function EventoB(props) {
     );
 }
 
+//agregar un socialNet
+//componente funcional
+
 export default EventoB;

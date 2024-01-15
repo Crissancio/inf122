@@ -1,6 +1,7 @@
 import './App.css';
-import Evento from "./components/Evento";
+//import Evento from "./components/Evento";
 import EventoB from "./components/EventoB";
+import EventoC from './components/EventoC';
 
 function App() {
   return (
@@ -23,6 +24,16 @@ function App() {
         icon1 = "rauw_1"
         icon2 = "rauw_2"
         icon3 = "rauw_3"/>
+        <EventoC 
+          image = "elZorro"
+          title = "SUELTAAAAAAAAAAAA"
+          dateLiteral = "SALIO SIN PERMISO CON TODAS SUS NENAS"
+          placeLiteral = "DAN UNA VUELTAAAAAA"
+          description = {[
+            "ESTO PA' LA NATURALES Y LAS QUE ESTAN HECHAS",
+            "NO DEJAN SOSPECHAAAAAAAAAAAAAAAAA",
+            ""]}
+          />
     </div>
   );
 }
