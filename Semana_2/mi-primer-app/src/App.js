@@ -1,9 +1,18 @@
+import React from 'react';
+//import DynamicComponent from './components/SocialNet';
 import './App.css';
+
 //import Evento from "./components/Evento";
 import EventoB from "./components/EventoB";
 import EventoC from './components/EventoC';
 
 function App() {
+  const data = [
+    {imageSocial: 'rauw_1' ,url:'https://www.facebook.com', alternativo: 'red social' },
+    {imageSocial: 'rauw_2' ,url:'https://www.instagram.com/', alternativo: 'red social' },
+    {imageSocial: 'rauw_3' ,url:'https://www.twitch.tv/', alternativo: 'red social' }
+  ];
+
   return (
     <div className="App">
       <EventoB
@@ -33,6 +42,7 @@ function App() {
             "ESTO PA' LA NATURALES Y LAS QUE ESTAN HECHAS",
             "NO DEJAN SOSPECHAAAAAAAAAAAAAAAAA",
             ""]}
+          socialNetwork={data}
           />
     </div>
   );

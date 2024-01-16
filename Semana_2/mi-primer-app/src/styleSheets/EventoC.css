@@ -36,22 +36,7 @@
     text-align: justify;
     margin-top: 24px;
 }
-.container-social-network{
-    margin: 20px 0 0 0;
+.social-net-container{
     display: flex;
-    justify-content: flex-start;
-    gap: 15px;
-    padding-top: 10px;
-    width: 127.682px;
-    height: 40px;
-}
-.container-social-network figure{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.container-social-network img{
-    border-radius: 50%;
-    width: 70px;
-    height: 70px ;
+    gap: 10px;
 }

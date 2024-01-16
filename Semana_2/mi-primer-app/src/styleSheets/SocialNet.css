@@ -1,0 +1,12 @@
+.social-network-figure{
+    margin: 0;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.social-image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}

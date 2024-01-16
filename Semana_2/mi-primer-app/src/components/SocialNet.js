@@ -1,14 +1,15 @@
-import React from "react";
+import React from 'react';
+import '../styleSheets/SocialNet.css'
 
-function SocialNet(props){
+function SocialNet({imageSocial, url, alternativo}){
     return(
-        <figure>
-            <a href= " { props.enlace }" >
-                <img className="icon-social-network" 
-                src={require(`../images/${props.icon1}.jpeg`)}alt="icon-social-1" />
+        <figure className='social-network-figure'>
+            <a href={url}>
+                <img className='social-image' 
+                    src={require(`../images/${imageSocial}.jpeg`)} 
+                    alt={alternativo}/>
             </a>
         </figure>
     );
 }
-
 export default SocialNet;
