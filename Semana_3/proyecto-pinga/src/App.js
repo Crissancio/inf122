@@ -10,29 +10,40 @@ import { useState } from "react";
 
 function App() {
 
+  const [mostrar,setMostrar] = useState(true)
   const [nroClicks,setNumClicks] = useState(0)
 
   const reiniciar = () => {
     setNumClicks(0);
     console.log("pingan't");
   }
+
   const resTres = () => {
     setNumClicks(nroClicks-3);
   }
+
   const sumTres = () => {
     setNumClicks(nroClicks+3);
   }
+
   const resUno = () => {
     setNumClicks(nroClicks-1);
   }
+
   const sumUno = () => {
     setNumClicks(nroClicks+1);
   }
+
+  const show = () => {
+    setMostrar(!mostrar);
+  }
+
   return (
     <div className="App">
 
       <div className='contenedor-principal'>
         <Contador nroClicks={nroClicks}
+          mostrar={mostrar}
         />
         <div className='contenedor-botones'>
           <div className='sub-contenedor-botones'>
@@ -55,6 +66,9 @@ function App() {
           <Boton texto="reset"
             esBotonClick={false}
             funcionClick={reiniciar}/>
+          <Boton texto="Mostrar/Ocultar"
+            esBotonClick={false}
+            funcionClick={show}/>
 
         </div>
       </div>
