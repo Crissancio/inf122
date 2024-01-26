@@ -1,0 +1,11 @@
+.galleryContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.galleryContainer img {
+    border-radius: 50%;
+    object-fit: cover;
+}
